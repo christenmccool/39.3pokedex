@@ -5,7 +5,7 @@ const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites
 
 const Pokecard = (props) => {
   return (
-    <div className="Pokecard">
+    <div className="Pokecard"  style={{animationDelay: `${props.delay}s`}}>
       <h4>{props.name}</h4>
       <img src={`${imgUrl}/${props.id}.png`} alt={`{props.name}`} />
       <p>Type: {props.type}</p>

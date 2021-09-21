@@ -12,13 +12,13 @@
   color: transparent;
   animation-name: fadeingrey;
   animation-duration: 1s;
-  animation-delay: 5s;
+  /* animation-delay: 5s; */
   animation-fill-mode: forwards;
 }
 
 @keyframes fadeingrey {
   0% {color: transparent;}
-  100% {color: darkgrey;}
+  100% {color: grey;}
 }
 
 .Pokedex-body {
@@ -32,7 +32,7 @@
   color: transparent;
   animation-name: fadeinblue;
   animation-duration: 1s;
-  animation-delay: 6s;
+  animation-delay: 8s;
   animation-fill-mode: forwards;
 }
 

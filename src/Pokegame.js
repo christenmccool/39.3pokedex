@@ -22,19 +22,25 @@ const Pokegame = ( {pokeArr = defaultPokeArr }) => {
 
   return (
     <>
-      <Pokedex 
+     <div>      
+       <Pokedex 
+        delay={0}
         pokeArr={hand1} 
         title="Hand 1" 
         total={total1} 
         isWinner={winner===1 ? true : false}
       />
+    </div>
+    <div>   
       <Pokedex 
+        delay={4}
         pokeArr={hand2} 
         title="Hand 2" 
         total={total2}
         isWinner={winner===2 ? true : false}
       />
-    </>
+    </div>
+  </>
   )
 };
 

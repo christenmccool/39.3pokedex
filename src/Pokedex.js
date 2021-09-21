@@ -14,7 +14,7 @@ const defaultPokeArr = [
   {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
 ];
 
-const Pokedex = ( {pokeArr = defaultPokeArr, title = "Pokedex", total, isWinner} ) => {
+const Pokedex = ( {pokeArr = defaultPokeArr, title = "Pokedex", total, isWinner, delay} ) => {
   // const winnerMessage = isWinner ? <h1 className="Pokedex-winner">This hand wins!</h1> : null;
   return (
     <div className="Pokedex">
@@ -22,6 +22,7 @@ const Pokedex = ( {pokeArr = defaultPokeArr, title = "Pokedex", total, isWinner}
       <div className="Pokedex-body">
         {pokeArr.map(ele => (
           <Pokecard 
+            delay={delay}
             id={ele.id}
             name={ele.name}
             type={ele.type}
@@ -29,7 +30,7 @@ const Pokedex = ( {pokeArr = defaultPokeArr, title = "Pokedex", total, isWinner}
           />
         ))}
       </div>
-      <h3 className="Pokedex-total">Total: {total}</h3>
+      <h3 className="Pokedex-total" style={{animationDelay: `${delay+3}s`}}>Total: {total}</h3>
 
       {/* {winnerMessage} */}
       <h1 className="Pokedex-winner">{isWinner ? "This hand wins!" : ""}</h1>
