@@ -1,0 +1,42 @@
+.Pokedex-title {
+  background-color: lightgrey;
+}
+
+.Pokedex-title {
+  text-align: center;
+  color: white;
+}
+
+.Pokedex-total {
+  text-align: center;
+  color: transparent;
+  animation-name: fadeingrey;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeingrey {
+  0% {color: transparent;}
+  100% {color: darkgrey;}
+}
+
+.Pokedex-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Pokedex-winner {
+  text-align: center;
+  color: transparent;
+  animation-name: fadeinblue;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeinblue {
+  0% {color: transparent;}
+  100% {color: blue;}
+}

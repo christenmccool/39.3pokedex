@@ -1,0 +1,23 @@
+.Pokecard {
+  background-color: lightgrey;
+  text-align: center;
+  width: 170px;
+  padding: 20px 0px;
+  margin: 10px;
+  border-radius: 10px;
+  animation: slidein 5s;
+}
+
+@keyframes slidein {
+  from {transform: translate(-1500px, 0px);}
+  to {transform: translate(0px, 0px);}
+}
+
+.Pokecard h4 {
+  color: blue;
+  margin: 0px;
+}
+
+.Pokecard p {
+  margin: 0px;
+}
